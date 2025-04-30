@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calories Needed Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h3>Plate Smart</h3>
+        <h4><img src="Kalkulator Kalori (5).png" alt=""></h4>
+        <form id="calorieForm">
+            <label for="gender">Jenis Kelamin:</label>
+            <select id="gender" required>
+                <option value="female">Wanita</option>
+                <option value="male">Pria</option>
+            </select>
+
+            <label for="height">Tinggi (cm):</label>
+            <input type="number" id="height" placeholder="Enter your height" required>
+
+            <label for="weight">Berat (kg):</label>
+            <input type="number" id="weight" placeholder="Enter your weight" required>
+
+            <label for="age">Umur (tahun):</label>
+            <input type="number" id="age" placeholder="Enter your age" required>
+
+            <button type="submit">Calculate</button>
+        </form>
+
+        <div id="result">
+            <h2>Kalori dalam sehari :
+                <h2> <span id="calorieResult">0</span> kkal</h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
